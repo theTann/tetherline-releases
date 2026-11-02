@@ -1,38 +1,43 @@
 # Tetherline
 
-USB 케이블로 연결한 안드로이드 폰의 **모바일 데이터**로 Windows PC를 인터넷에 연결하는 앱입니다.
-프록시 설정 없이 PC의 모든 프로그램이 그대로 동작합니다.
+Connects your Windows PC to the internet through the **mobile data** of an Android phone plugged in over USB.
+No proxy settings: every program on the PC just works.
 
-이 저장소는 **PC 앱 배포 전용**입니다. 소스 코드는 공개하지 않습니다.
+This repository is **only for distributing the PC app**. The source code is not public.
 
-## 다운로드
+## Download
 
-[**Releases**](../../releases/latest)에서 최신 `Tetherline-<버전>-win-x64.zip`을 받으세요.
-같이 올라가 있는 `.sha256` 파일로 내려받은 파일이 맞는지 확인할 수 있습니다.
+Get the latest `Tetherline-<version>-win-x64.zip` from [**Releases**](../../releases/latest).
+Use the `.sha256` file next to it to verify your download.
 
-폰 앱은 Google Play에서 설치합니다. (출시 준비 중)
+Install the phone app from Google Play. (Coming soon)
 
-## 필요한 것
+## Requirements
 
-- Windows 10 (64비트) 또는 Windows 11, 관리자 권한
-- USB 디버깅을 켠 Android 8.0 이상 폰, 폰에 설치한 Tetherline 앱
-- 데이터 전송이 되는 USB 케이블
+- Windows 10 (64-bit) or Windows 11, with administrator rights
+- An Android 8.0+ phone with USB debugging turned on and the Tetherline app installed
+- A USB cable that carries data
 
-## 사용 방법
+## How to use
 
-1. zip을 원하는 폴더에 풉니다.
-2. `allow-firewall.bat`을 마우스 오른쪽 버튼으로 눌러 **관리자 권한으로 실행**합니다. (처음 한 번)
-3. 폰을 USB로 연결하고, 폰 앱에서 **중계 시작**을 누릅니다.
-4. `Tetherline.exe`를 실행합니다. 작업 표시줄 아이콘이 초록색이 되면 연결된 것입니다.
+1. Unzip to any folder.
+2. Right-click `allow-firewall.bat` and choose **Run as administrator**. (First time only)
+3. Connect the phone over USB and tap **Start relay** in the phone app.
+4. Run `Tetherline.exe`. When the taskbar icon turns green, you are connected.
 
-자세한 내용은 zip 안의 `README.txt`를 보세요.
+See `README.txt` inside the zip for details.
 
-## 알아두세요
+## Good to know
 
-- 아직 코드 서명이 되어 있지 않아 처음 실행할 때 "Windows의 PC 보호" 창이 뜰 수 있습니다. **추가 정보 → 실행**을 누르세요.
-- "스마트 앱 컨트롤"이 켜진 PC에서는 실행되지 않습니다.
-- ping(ICMP)은 동작하지 않습니다.
+- The app is not code-signed yet, so the first run may show "Windows protected your PC". Click **More info → Run anyway**.
+- It will not run on PCs with Smart App Control turned on.
+- ping (ICMP) does not work.
 
-## 문제 신고
+## Reporting problems
 
-[Issues](../../issues)에 Windows 버전, 폰 기종, 트레이 아이콘 메뉴의 **로그 보기 → 모두 복사**로 복사한 로그를 함께 적어 주세요.
+Open an [issue](../../issues) with your Windows version, phone model, and the log copied from the tray icon menu via **Show log → Copy all**.
+
+## Links
+
+- [App page](https://thetann.github.io/apps/tetherline/)
+- [Privacy policy](https://thetann.github.io/apps/tetherline/privacy/)
